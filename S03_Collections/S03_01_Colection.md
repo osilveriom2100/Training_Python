@@ -219,9 +219,15 @@ mixta = [1, "dos", 3.0, [4, 5]]
     ```
 
 ## Diccionarios
-### Un diccionario es una colección no ordenada, mutable y indexada de pares clave-valor.
+### Un diccionario es una colección ordenada apartir de la 3.7 o mayor, son mutable y indexada de pares clave-valor.
 ### Los diccionarios se definen utilizando llaves {} y los pares clave-valor se separan por comas, mientras que la clave y el valor se separan por dos puntos :.
     ```python
+    # Sintaxis basica de un diccionario
+    mi_diccionario = {clave1: valor1, calve2: valor2}
+    ```
+
+    ```python
+    # Ejemplo de diccionario
     mi_diccionario = {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Madrid'}
     print(mi_diccionario)
     ```
