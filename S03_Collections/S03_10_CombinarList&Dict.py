@@ -2,7 +2,7 @@ print('Combinar listas y diccionarios')
 
 variables = []
 
-variables = [{'nombre': 'Juan', 'appellido': 'Perez', 'edad': 30}, 
+variables = [{'nombre': 'Juan', 'apellido': 'Perez', 'edad': 30}, 
             {'nombre': 'Maria', 'apellido': 'Gomez', 'edad': 25}]
 
 print(f'Lista de diccionarios: {variables}')

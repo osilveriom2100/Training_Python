@@ -152,7 +152,7 @@ mixta = [1, "dos", 3.0, [4, 5]]
     ```
 
 ## Tuplas
-### Una tupla es una colección ordenada e inmutable de elementos. Lo wue significa que una vez creada una tupla no es posible modificar su tamaño, ni podemos agregar mas elementos, ni modificar ni eliminar. Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.
+### Una tupla es una colección ordenada e inmutable de elementos. Lo que significa que una vez creada una tupla no es posible modificar su tamaño, ni podemos agregar mas elementos, ni modificar ni eliminar. Las tuplas se definen utilizando paréntesis () y los elementos se separan por comas.
 
     ```python
     mi_tupla = (1, 2, 3, 4, 5)
@@ -221,16 +221,16 @@ mixta = [1, "dos", 3.0, [4, 5]]
 ## Diccionarios
 ### Un diccionario es una colección ordenada apartir de la 3.7 o mayor, son mutable y indexada de pares clave-valor.
 ### Los diccionarios se definen utilizando llaves {} y los pares clave-valor se separan por comas, mientras que la clave y el valor se separan por dos puntos :.
-    ```python
+```python
     # Sintaxis basica de un diccionario
-    mi_diccionario = {clave1: valor1, calve2: valor2}
-    ```
+    mi_diccionario = {clave1: valor1, clave2: valor2}
+ ```
 
-    ```python
+```python
     # Ejemplo de diccionario
     mi_diccionario = {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Madrid'}
     print(mi_diccionario)
-    ```
+```
 - los valores de un diccionario pueden ser de diferentes tipos de datos
     ```python
     mi_diccionario_mixto = {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Madrid', 'es_estudiante': True}

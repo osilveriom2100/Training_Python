@@ -52,6 +52,8 @@ for producto in inventario:
 if producto_eliminar:
     inventario.remove(producto_eliminar) # eliminamos el producto utilizando el metodo remove de la lista
     print(f'El producto con id {id_producto_eliminar} ha sido eliminado.')
-else:    print(f'No se encontro un producto con el id {id_producto_eliminar} para eliminar.')
+else:
+    print(f'No se encontro un producto con el id {id_producto_eliminar} para eliminar.')
+
 
 print(f'Inventario de productos actualizado: {inventario}')
