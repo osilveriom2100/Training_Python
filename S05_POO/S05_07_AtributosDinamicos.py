@@ -32,9 +32,15 @@ class Persona:
 # Crear una instancia de la clase Persona
 persona1 = Persona("Juan", 30)
 # Acceder a los atributos utilizando __dict__
-print(persona1.__dict__)  # Esto generará un error porque __slots__ limita los atributos
+try:
+    print(persona1.__dict__)  # Esto generará un error porque __slots__ limita los atributos
+except AttributeError as error:
+    print(f"Error al acceder a __dict__: {error}")
 # Agregar un nuevo atributo dinámico (esto también generará un error debido a __slots__)
-persona1.nacionalidad = "Desconocida"  # Esto generará un error debido a __slots__
+try:
+    persona1.nacionalidad = "Desconocida"  # Esto generará un error debido a __slots__
+except AttributeError as error:
+    print(f"Error al agregar 'nacionalidad': {error}")
 # En este ejemplo, hemos definido una clase `Persona` con `__slots__` que limita los atributos a `nombre` y `edad`. Al intentar acceder a `__dict__` o agregar un nuevo atributo dinámico, se generará un error debido a la restricción impuesta por `__slots__`. Esto demuestra cómo `__slots__` puede mejorar el rendimiento al limitar los atributos de una clase, pero también limita la flexibilidad de agregar atributos dinámicos.   
 # En resumen, `__dict__` permite almacenar atributos dinámicos en una instancia de clase, mientras que `__slots__` limita los atributos que una instancia puede tener, lo que puede mejorar el rendimiento pero reduce la flexibilidad. Es importante elegir entre estas opciones según las necesidades específicas de tu aplicación.   
 
