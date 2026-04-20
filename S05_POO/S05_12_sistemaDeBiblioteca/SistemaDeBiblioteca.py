@@ -1,5 +1,9 @@
-from .Biblioteca import Biblioteca
-from .Libro import Libro
+try:
+    from .Biblioteca import Biblioteca
+    from .Libro import Libro
+except ImportError:
+    from Biblioteca import Biblioteca
+    from Libro import Libro
 
 if __name__ == "__main__":
     libro1 = Libro("El Quijote", "Miguel de Cervantes", "Novela")

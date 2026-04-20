@@ -1,4 +1,4 @@
-# Atribustos de clase e instancia
+# Atributos de clase e instancia
 # Atributo de clase: Compartido por todas las instancias de la clase. Se define dentro de la clase pero fuera de cualquier método.
 # Atributo de instancia: Específico para cada instancia de la clase. Se define dentro del método __init__ y se accede a través de self.
 

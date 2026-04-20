@@ -3,12 +3,12 @@ from .Empleado import Empleado
 class Empresa:
     def __init__(self, nombre=None, empleados=None):
         self._nombre = nombre
-        self._empleados = []
+        self._empleados = list(empleados) if empleados is not None else []
 
     def contratar_empleado(self, empleado):
         self._empleados.append(empleado)
 
-    def mostrar_emplados(self):
+    def mostrar_empleados(self):
         for persona in self._empleados:
             print(persona.nombre)
     
