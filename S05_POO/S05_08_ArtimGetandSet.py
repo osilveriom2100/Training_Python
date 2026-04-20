@@ -14,7 +14,7 @@ class Aritmetica:
 
     @property
     def operador2(self):
-        return self._operador1
+        return self._operador2
 
     @operador2.setter
     def operador2(self, operador2):
